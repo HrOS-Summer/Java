@@ -11,8 +11,12 @@ public class CollectionTest {
 
         Iterator<Integer> iterator = list.iterator();
 
-        while(iterator.hasNext()) {
-            System.out.println(iterator.next());
+//        while(iterator.hasNext()) {
+//            System.out.println(iterator.next());
+//        }
+
+        for(int x: list) {  // this for loop also calls the hasNext() and next()
+            System.out.println(x);
         }
     }
 }
