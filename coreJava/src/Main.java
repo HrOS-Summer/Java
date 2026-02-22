@@ -1,11 +1,35 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        StringBuffer sb = new StringBuffer("Hello");
-        sb.append(" World"); // Modifies the existing object
-        System.out.println(sb);
+
+        List<Integer> list = new ArrayList<>();
+        list.add(10);
+        list.add(20);
+        list.add(90);
+        list.add(40);
+        list.add(70);
+        list.add(100);
+
+        List<Integer> list2 = list.subList(0, list.size());
+
+        list.add(999);
+        List<Integer> lk = new LinkedList<>(list);
+//        lk.add(2);
+//        lk.add(3);
+//        lk.add(5);
+//        lk.add(7);
+//        lk.add(11);
+//        lk.set(1, 33);
+        System.out.println(lk);
     }
+
+
+
 }
