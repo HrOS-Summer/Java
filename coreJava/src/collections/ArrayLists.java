@@ -1,6 +1,7 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ArrayLists {
@@ -24,5 +25,7 @@ public class ArrayLists {
         List<Integer> list3 = list2.subList(1, 4);
         System.out.println(list3);
 
+        Integer[] arr = list.toArray(new Integer[7]);
+        System.out.println(Arrays.toString(arr));
     }
 }

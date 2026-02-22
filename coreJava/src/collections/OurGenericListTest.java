@@ -2,7 +2,7 @@ package collections;
 
 import java.util.Iterator;
 
-public class CollectionTest {
+public class OurGenericListTest {
     public static void main(String[] args) {
         OurGenericList<Integer> list = new OurGenericList<>();
         list.add(1);
