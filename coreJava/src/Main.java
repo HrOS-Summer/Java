@@ -27,7 +27,11 @@ public class Main {
 //        lk.add(7);
 //        lk.add(11);
 //        lk.set(1, 33);
-        System.out.println(lk);
+
+        String[] options = {"Add", "Display", "Remove", "Exit"};
+        for(int i = 0; i<options.length; i++) {
+            System.out.println((i+1) +"."+ options[i]);
+        }
     }
 
 
